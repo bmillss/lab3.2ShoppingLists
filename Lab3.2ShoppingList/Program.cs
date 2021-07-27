@@ -11,35 +11,76 @@ namespace Lab3._2ShoppingList
             while (userCont == "y" || userCont == "yes")
             {
                 Dictionary<string, double> menu = new Dictionary<string, double>();
-                menu.Add("Apple", .99);
-                menu.Add("Bread", 5.99);
-                menu.Add("Cheese", 2.99);
-                menu.Add("Eggs", 3.99);
-                menu.Add("Milk", 4.99);
+                menu.Add("Cold cut", 11.99);
+                menu.Add("steak&cheese ", 12.99);
+                menu.Add("subadub", 7.99);
+                menu.Add("egg&cheese", 6.99);
 
                 Console.WriteLine("Welcome to Guenther's Market!");
                 Console.WriteLine("\n Item  &   Price");
                 Console.WriteLine("===================");
 
-                foreach (KeyValuePair<string,double> kvp in menu)
+                foreach (KeyValuePair<string,double> pair in menu)
                 {
-                    Console.WriteLine("key = {0}, Value = {1}", kvp.Key, kvp.Value);
-                }
-                
-                Console.WriteLine("What item would you like to order?");
-                string userInput = Console.ReadLine().ToLower();
-
-                if (menu.ContainsKey(userInput))
-                {
-                    Console.WriteLine($"Adding {userInput} to cart at insert price");
-                }
-                
-                else
-                {
-                    Console.WriteLine("Sorry we don't have those. Please try again.");
+                    Console.WriteLine("{0}   \t{1}", pair.Key, pair.Value);
                 }
 
-                Console.WriteLine("Would you like to order anything else?");
+                
+                Console.WriteLine("\nWould you like to add/remove/change an item? (A)(R)(C) or press (Q) to quit");
+                string userChoice = Console.ReadLine().ToLower();
+
+                switch(userChoice)
+                {
+                    case "a":
+                        Console.WriteLine("\nWhat would you like to add?");
+                        string userInput = Console.ReadLine().ToLower();
+                        Console.WriteLine("At what price?");
+                        double userPrice = Convert.ToDouble(Console.ReadLine());
+                        menu[userInput] = userPrice;
+
+                        foreach (var pair in menu)
+                        {
+                            Console.WriteLine($"{pair.Key} is priced at {pair.Value}");
+                        }
+
+                        break;
+                    case "r":
+                        Console.WriteLine("\nWhat would you like to remove?");
+                        string userInputRem = Console.ReadLine().ToLower();
+                        
+                        if (menu.ContainsKey(userInputRem))
+                        {
+                            menu.Remove(userInputRem);
+                            break;
+                        }
+                        else
+                        {
+                            Console.WriteLine("This item was not found please try again");
+                            continue;
+                        }
+                    case "c":
+                        Console.WriteLine("\nWhich item would you like to change?");
+                        foreach (var pair in menu)
+                        {
+                            Console.WriteLine($"{pair.Key} is priced at {pair.Value}");
+                        }
+                        string userChangeItem = Console.ReadLine();
+
+                        Console.WriteLine("\nWhat price would you like it to be?");
+                        double userInputChange = Convert.ToDouble(Console.ReadLine());
+
+                        menu[userChangeItem] = userInputChange;
+
+                        break;
+                    default:
+                        break;
+
+                }
+                foreach (var pair in menu)
+                {
+                    Console.WriteLine($"{pair.Key} is priced at {pair.Value}");
+                }
+                Console.WriteLine("\nWould you like to order anything else?");
                 userCont = Console.ReadLine().ToLower();
             }
 
