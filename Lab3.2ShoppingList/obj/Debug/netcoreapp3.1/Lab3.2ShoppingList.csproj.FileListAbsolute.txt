@@ -1,0 +1,13 @@
+C:\Devbuild2021\Lab3.2ShoppingList\Lab3.2ShoppingList\bin\Debug\netcoreapp3.1\Lab3.2ShoppingList.exe
+C:\Devbuild2021\Lab3.2ShoppingList\Lab3.2ShoppingList\bin\Debug\netcoreapp3.1\Lab3.2ShoppingList.deps.json
+C:\Devbuild2021\Lab3.2ShoppingList\Lab3.2ShoppingList\bin\Debug\netcoreapp3.1\Lab3.2ShoppingList.runtimeconfig.json
+C:\Devbuild2021\Lab3.2ShoppingList\Lab3.2ShoppingList\bin\Debug\netcoreapp3.1\Lab3.2ShoppingList.runtimeconfig.dev.json
+C:\Devbuild2021\Lab3.2ShoppingList\Lab3.2ShoppingList\bin\Debug\netcoreapp3.1\Lab3.2ShoppingList.dll
+C:\Devbuild2021\Lab3.2ShoppingList\Lab3.2ShoppingList\bin\Debug\netcoreapp3.1\Lab3.2ShoppingList.pdb
+C:\Devbuild2021\Lab3.2ShoppingList\Lab3.2ShoppingList\obj\Debug\netcoreapp3.1\Lab3.2ShoppingList.csprojAssemblyReference.cache
+C:\Devbuild2021\Lab3.2ShoppingList\Lab3.2ShoppingList\obj\Debug\netcoreapp3.1\Lab3.2ShoppingList.AssemblyInfoInputs.cache
+C:\Devbuild2021\Lab3.2ShoppingList\Lab3.2ShoppingList\obj\Debug\netcoreapp3.1\Lab3.2ShoppingList.AssemblyInfo.cs
+C:\Devbuild2021\Lab3.2ShoppingList\Lab3.2ShoppingList\obj\Debug\netcoreapp3.1\Lab3.2ShoppingList.csproj.CoreCompileInputs.cache
+C:\Devbuild2021\Lab3.2ShoppingList\Lab3.2ShoppingList\obj\Debug\netcoreapp3.1\Lab3.2ShoppingList.dll
+C:\Devbuild2021\Lab3.2ShoppingList\Lab3.2ShoppingList\obj\Debug\netcoreapp3.1\Lab3.2ShoppingList.pdb
+C:\Devbuild2021\Lab3.2ShoppingList\Lab3.2ShoppingList\obj\Debug\netcoreapp3.1\Lab3.2ShoppingList.genruntimeconfig.cache
